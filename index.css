@@ -1,0 +1,239 @@
+body{
+    background-color:red;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.mainContainer{
+    width:1100px;
+    height:634px;
+    background-color:rgb(227, 234, 248);
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.widgets{
+    width:10%;
+    background-color: white;
+    height:100%;
+    float: left;
+}
+.widget-item{
+    margin-top:20px;
+    background-color: rgb(9, 56, 110);
+    height: 80px;
+    text-align:center;
+    box-sizing: border-box;
+    padding:10px;
+    color:rgb(221, 216, 216);
+    cursor: pointer;
+}
+.widget-item:hover{
+    background-color: rgb(79, 66, 199);
+}
+.seatsAndOrder{
+    width: 100%;
+}
+.seatsContainer{
+    width: 100%;
+    text-align: center;
+    height: 80%;
+}
+.seatRow{
+    display: flex;
+}
+.seatItem{
+    font-size: 20px;
+    width: 5%;
+}
+#rownumber{
+    width: 80px;
+    height: 50px;
+    font-size: 22px;
+    box-sizing: border-box;
+    padding:10px;
+    margin-right: 10px;
+}
+#seatsqty{
+    width: 80px;
+    height: 50px;
+    font-size: 22px;
+    box-sizing: border-box;
+    padding:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.absent{
+    /* color:red; */
+}
+.present{
+    /* color:green; */
+}
+.orderContainer{
+    width:50%;
+    margin: 0 auto;
+    height: 20%;
+    display: flex;
+    justify-content:center ;
+}
+.orderButton{
+    width: 70px;
+    height: 50px;
+    border:none;
+    background-color: blue;
+    color:white;
+}
+#orderModal{
+    width: 400px;
+    height:400px;
+    background-color: white;
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+.orderModalContainer{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    display: none;
+}
+.dim{
+    width:100vw;
+    height:100vh;
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+}
+#order_user_name{
+    font-size: 20px;
+    margin-top:40px;
+    padding:5px;
+}
+#order_first_name{
+    font-size: 20px;
+    margin-top:10px;
+    padding:5px;
+}
+#order_last_name{
+    font-size: 20px;
+    margin-top:10px;
+    padding:5px;
+}
+#order_phone{
+    font-size: 20px;
+    margin-top:10px;
+    padding:5px;
+}
+#order_email{
+    font-size: 20px;
+    margin-top:10px;
+    padding:5px;
+}
+.closeordermodal{
+    width:90%;
+    text-align: end;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+#order_submit{
+    width: 100px;
+    height:40px;
+    background-color:blue;
+    color:white;
+    font-weight: bold;
+    margin-top:18px;
+}
+.searchModalContainer{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    display: none; 
+}
+#searchModal{
+    width: 400px;
+    height:400px;
+    background-color: white;
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+#search_user_name{
+    margin-top:60px;
+    font-size:20px;
+}
+#search_submit{
+    width: 100px;
+    height:40px;
+    background-color:blue;
+    color:white;
+    font-weight: bold;
+    margin-top:18px;
+}
+.totalModalContainer{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    display: none; 
+}
+#totalModal{
+    width: 400px;
+    height:400px;
+    background-color: white;
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+#total_table{
+    margin: 0 auto;
+    max-height: 250px;
+}
+#total_table td{
+    padding: 5px;
+    text-align: center;
+}
+.total_table_wrapper{
+    height: 300px;
+    overflow: scroll;
+}
+#search_table{
+    margin: 0 auto;
+    text-align: center;
+}
+#search_table td{
+    padding: 5px;
+}
+.search_table_wrapper{
+    margin-top: 5px;
+    height: 145px;
+    overflow: scroll;
+}
+@media only screen and (max-width:1150px){
+    .mainContainer{
+        width:90%;
+    }
+}
